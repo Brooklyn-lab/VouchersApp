@@ -1,0 +1,278 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "title": "All Beauty",
+      "logo": "./img/companies/allbeauty.png",
+      "link": "https://www.allbeauty.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Save Up to 40%",
+          "header": "Save Up to 40% RRP",
+          "description": {
+            "text": "Makeup Special Offers"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "B & Q",
+      "logo": "./img/companies/B&Q.png",
+      "link": "https://www.diy.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "20% Off",
+          "header": "Get 20% Off",
+          "description": {
+            "text": "20% Off for all kitchens* and bathrooms**"
+          },
+          "details": [
+            "*When you spent £2,500 on a kitchen",
+            "**When you spent £250 on a bathroom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Best Buy",
+      "logo": "./img/companies/bestbuy.png",
+      "link": "https://www.bestbuy.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to $300*",
+          "header": "Save Up to $300*",
+          "description": {
+            "text": "*on Select laptops with Student Deals"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Charles & Keith",
+      "logo": "./img/companies/CharlesAndKeith.png",
+      "link": "https://www.charleskeith.eu/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "15% Off",
+          "header": "Get 15% Discount",
+          "description": {
+            "title": "Valentine's Day 2022 Collection",
+            "text": "Celebrate the season of love with adorable heart-themed accessories"
+          }
+        },
+        {
+          "id": 2,
+          "shortText": "10% Off",
+          "header": "Get 10% Discount",
+          "description": {
+            "title": "New Arrivals",
+            "text": "Show off your style personality with our latest shoes, bags and accessories"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Deal Extreme (DX)",
+      "logo": "./img/companies/dealextreme.png",
+      "link": "https://www.dx.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "5% Off",
+          "header": "Get 5% Off",
+          "description": {
+            "text": "Get up to 35% Off in Flash Deals"
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Dorothy Perkins",
+      "logo": "./img/companies/dorothyperkins.png",
+      "link": "https://www.dorothyperkins.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 50% Off",
+          "header": "Get up to 50% Off",
+          "description": {
+            "text": "Wear now, layer later <br>Up to 50% Off Trans-Seasonal Staples"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "GhostBed",
+      "logo": "./img/companies/ghostbed.png",
+      "link": "https://www.ghostbed.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "30% Off",
+          "header": "Get 30% Off",
+          "description": {
+            "text": "Biggest Flash Sale <br> Mattresses + 2 Luxury Pillows"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Know Fashion Style",
+      "logo": "./img/companies/knowfashionstyle.png",
+      "link": "https://www.knowfashionstyle.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 30% Off",
+          "header": "Get Up to 30% Off for Annual Best Sellers",
+          "description": {
+            "text": "<ul class='coupon__description'><li>- No Minimum Order</li><li>- Shipping Worldwide</li></ul>"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Long Tall Sally",
+      "logo": "./img/companies/longtallsally.png",
+      "link": "https://www.longtallsally.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 70% Off",
+          "header": "Get Up to 70% Off",
+          "description": {
+            "text": "Shop the Outlet with up to 70% off"
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Look Fantastic",
+      "logo": "./img/companies/lookfantastic.png",
+      "link": "https://www.lookfantastic.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Save 20%*",
+          "header":
+          "Save 20%*<br> with code: <span class='coupon__text-strong'>NEW20</span>",
+          "description": {
+            "text": "Code available for new customers"
+          },
+          "details": ["*Code valid on products in list only."]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Marks & Spencer",
+      "logo": "./img/companies/MS.png",
+      "link": "https://www.marksandspencer.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "20% Off",
+          "header": "Get 20% Off",
+          "description": {
+            "text": "Get the discount on selected lines"
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Samsonite",
+      "logo": "./img/companies/samsonite.png",
+      "link": "https://shop.samsonite.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "20% Off",
+          "header":
+          "20% Off Site Side <br> Using code: <span class='coupon__text-strong'>JOY20</span>",
+          "description": {
+            "text": "20% Off for all categories: <br> <ul class='coupon__description'><li>- Luggage</li><li>- Backpacks & bags</li><li>- Accessories</li></ul>"
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Women Secret",
+      "logo": "./img/companies/womensecret.png",
+      "link": "https://womensecret.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "50% Off",
+          "header": "50% Off on the 2nd item",
+          "description": {
+            "text": "<ul class='coupon__description'><li>- Bra</li><li>- Briefs</li><li>- Nightwear & Homewear</li><li>- Accessories</li><li>- Men</li><li>- Maternity</li></ul>"
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Forever21",
+      "logo": "./img/companies/forever21.png",
+      "link": "https://www.forever21.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "17% Off",
+          "header": "Get 17% Discount",
+          "description": {
+            "title": "Last chance to get 17% Off",
+            "text": "Almost everything"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Bad Rhino",
+      "logo": "./img/companies/badrhino.png",
+      "link": "https://www.badrhino.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 70%",
+          "header": "Up to 70% Off Selected Lines",
+          "description": {
+            "text": "Further reductions CLEARANCE"
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Rohan",
+      "logo": "./img/companies/rohan.png",
+      "link": "https://www.rohan.co.uk/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "50% Off",
+          "header": "Get 50% Discount",
+          "description": {
+            "text": "Even more further reductions. The Winter Sale. Many lines 50% Off"
+          }
+        }
+      ]
+    }
+  ]
+}

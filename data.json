@@ -1,0 +1,24 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "title": "B & Q",
+      "logo": "./img/companies/B&Q.png",
+      "link": "https://www.diy.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "20% Off",
+          "header": "Get 20% Off",
+          "description": {
+            "text": "20% Off for all kitchens* and bathrooms**"
+          },
+          "details": [
+            "*When you spent £2,500 on a kitchen",
+            "**When you spent £250 on a bathroom"
+          ]
+        }
+      ]
+    }
+  ]
+}
