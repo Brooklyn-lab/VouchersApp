@@ -74,3 +74,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.content-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #222222;
+
+  @media screen and (max-width: 992px) {
+    font-size: 39px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 30px;
+  }
+}

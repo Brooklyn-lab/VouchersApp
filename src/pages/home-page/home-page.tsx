@@ -1,5 +1,6 @@
 import {useAppSelector} from '../../hooks';
 import {useEffect} from 'react';
+import Companies from '../../components/companies/companies';
 
 function HomePage():JSX.Element {
   const {companies} = useAppSelector(({DATA}) => DATA);
@@ -10,7 +11,7 @@ function HomePage():JSX.Element {
   
   return (
    <div className='container'>
-     <h1>Main Page</h1>
+     <Companies />
    </div>
   );
 }
