@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-server": "json-server --watch data.json --port 8000 --delay 1000 data.json --static ./src/assets/images/companies"
+    "start-server": "json-server --watch data.json --port 8000 --delay 1000 --static ./static"
   },
   "eslintConfig": {
     "extends": [

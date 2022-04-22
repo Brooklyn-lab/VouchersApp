@@ -12,7 +12,7 @@ export const fetchCompaniesDataAction = createAsyncThunk<void, undefined, {
 	'data/fetchCompaniesData',
 	async (_arg, {dispatch, extra: api}) => {
 		try {
-			const {data} = await api.get<Company[]>('/companies');
+			const {data} = await api.get<Company[]>('/companies/');
 			dispatch(fetchCompaniesData(data));
 		} catch (error) {
 			console.error(error);

@@ -19,7 +19,7 @@
     {
       "id": 2,
       "title": "B & Q",
-      "logo": "../../assets/images/companies/B&Q.png",
+      "logo": "/B&Q.png",
       "link": "https://www.diy.com/",
       "coupons": [
         {
@@ -39,7 +39,7 @@
     {
       "id": 3,
       "title": "Best Buy",
-      "logo": "../../assets/images/companies/bestbuy.png",
+      "logo": "/bestbuy.png",
       "link": "https://www.bestbuy.com/",
       "coupons": [
         {
@@ -55,7 +55,7 @@
     {
       "id": 4,
       "title": "Charles & Keith",
-      "logo": "../../assets/images/companies/CharlesAndKeith.png",
+      "logo": "/CharlesAndKeith.png",
       "link": "https://www.charleskeith.eu/",
       "coupons": [
         {
@@ -81,7 +81,7 @@
     {
       "id": 5,
       "title": "Deal Extreme (DX)",
-      "logo": "../../assets/images/companies/dealextreme.png",
+      "logo": "/dealextreme.png",
       "link": "https://www.dx.com/",
       "coupons": [
         {
@@ -97,7 +97,7 @@
     {
       "id": 6,
       "title": "Dorothy Perkins",
-      "logo": "../../assets/images/companies/dorothyperkins.png",
+      "logo": "/dorothyperkins.png",
       "link": "https://www.dorothyperkins.com/",
       "coupons": [
         {
@@ -113,7 +113,7 @@
     {
       "id": 7,
       "title": "GhostBed",
-      "logo": "../../assets/images/companies/ghostbed.png",
+      "logo": "/ghostbed.png",
       "link": "https://www.ghostbed.com/",
       "coupons": [
         {
@@ -129,7 +129,7 @@
     {
       "id": 8,
       "title": "Know Fashion Style",
-      "logo": "../../assets/images/companies/knowfashionstyle.png",
+      "logo": "/knowfashionstyle.png",
       "link": "https://www.knowfashionstyle.com/",
       "coupons": [
         {
@@ -145,7 +145,7 @@
     {
       "id": 9,
       "title": "Long Tall Sally",
-      "logo": "../../assets/images/companies/longtallsally.png",
+      "logo": "/longtallsally.png",
       "link": "https://www.longtallsally.com/",
       "coupons": [
         {
@@ -161,7 +161,7 @@
     {
       "id": 10,
       "title": "Look Fantastic",
-      "logo": "../../assets/images/companies/lookfantastic.png",
+      "logo": "/lookfantastic.png",
       "link": "https://www.lookfantastic.com/",
       "coupons": [
         {
@@ -179,7 +179,7 @@
     {
       "id": 11,
       "title": "Marks & Spencer",
-      "logo": "../../assets/images/companies/MS.png",
+      "logo": "/MS.png",
       "link": "https://www.marksandspencer.com/",
       "coupons": [
         {
@@ -195,7 +195,7 @@
     {
       "id": 12,
       "title": "Samsonite",
-      "logo": "../../assets/images/companies/samsonite.png",
+      "logo": "/samsonite.png",
       "link": "https://shop.samsonite.com/",
       "coupons": [
         {
@@ -212,7 +212,7 @@
     {
       "id": 13,
       "title": "Women Secret",
-      "logo": "../../assets/images/companies/womensecret.png",
+      "logo": "/womensecret.png",
       "link": "https://womensecret.com/",
       "coupons": [
         {
@@ -228,7 +228,7 @@
     {
       "id": 14,
       "title": "Forever21",
-      "logo": "../../assets/images/companies/forever21.png",
+      "logo": "/forever21.png",
       "link": "https://www.forever21.com/",
       "coupons": [
         {
@@ -245,7 +245,7 @@
     {
       "id": 15,
       "title": "Bad Rhino",
-      "logo": "../../assets/images/companies/badrhino.png",
+      "logo": "/badrhino.png",
       "link": "https://www.badrhino.com/",
       "coupons": [
         {
@@ -261,7 +261,7 @@
     {
       "id": 16,
       "title": "Rohan",
-      "logo": "../../assets/images/companies/rohan.png",
+      "logo": "/rohan.png",
       "link": "https://www.rohan.co.uk/",
       "coupons": [
         {
