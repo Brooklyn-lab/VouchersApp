@@ -6,6 +6,7 @@ import {Company} from '../../types/company';
 const initialState: CompaniesData = {
 	companies: [],
 	isLoadingData: false,
+	selectedCompany: {},
 };
 
 export const companiesData = createSlice({
@@ -16,7 +17,10 @@ export const companiesData = createSlice({
 			state.companies = action.payload;
 			state.isLoadingData = true;
 		},
+		getCurrentCompany: (state, action: PayloadAction<number>) => {
+			state.selectedCompany = state.companies.find((company) => company.id === action.payload) ?? [];
+		},
 	},
 });
 
-export const {fetchCompaniesData} = companiesData.actions;
+export const {fetchCompaniesData, getCurrentCompany} = companiesData.actions;

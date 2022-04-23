@@ -1,0 +1,25 @@
+.navigate {
+  padding: 30px 0 40px;
+  background: #FFFFFF;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #222222;
+    padding-left: 48px;
+    cursor: pointer;
+    z-index: 1;
+    display: inline-block;
+  }
+
+  &__arrow {
+    position: absolute;
+  }
+}

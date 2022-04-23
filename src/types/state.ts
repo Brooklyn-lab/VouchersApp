@@ -4,6 +4,7 @@ import {Company} from './company';
 export type CompaniesData = {
 	companies: Company[],
 	isLoadingData: boolean,
+	selectedCompany: {} | Company,
 };
 
 export type State = ReturnType<typeof store.getState>;

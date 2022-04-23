@@ -1,11 +1,10 @@
 export enum AppRoute {
   Main = '/',
-  Stores = '/Stores',
-  Store = '/Store',
-  Coupons = '/Coupons',
-  Coupon = '/Coupon/:id',
-  About = '/About',
-  Contacts = '/Contacts'
+  Stores = '/stores',
+  Coupons = '/coupons/:id',
+  Coupon = '/coupon/:id',
+  About = '/about',
+  Contacts = '/contacts'
 }
 
 export enum NameSpace {
