@@ -6,7 +6,7 @@ import {Company} from '../../types/company';
 const initialState: CompaniesData = {
 	companies: [],
 	isLoadingData: false,
-	selectedCompany: {},
+	selectedCompany: null,
 };
 
 export const companiesData = createSlice({

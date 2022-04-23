@@ -21,13 +21,15 @@ function Coupons() {
 		if (id) {
 			dispatch(getCurrentCompany(Number(id)));
 			
-			if (!isEmpty(company)) {
-				setIsLoaded(!isLoaded);
-				console.log(company);
-			}
-			
+			// if (!isEmpty(company)) {
+			// 	setIsLoaded(!isLoaded);
+			//
+			// }
+			console.log(company);
 		}
 	}, [dispatch, id, company]);
+	
+	
 	
 	return (
 		<section className='company'>
@@ -36,7 +38,7 @@ function Coupons() {
 				:
 				<div className='company__body'>
 					<div className='company__logo-wrapper'>
-						<img />
+						<img src={company.logo} />
 					</div>
 				</div>}
 		</section>
