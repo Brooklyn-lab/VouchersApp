@@ -1,33 +1,37 @@
-import './button.scss';
-import {Link} from 'react-router-dom';
-import {AppRoute} from '../../const';
+import { Link } from "react-router-dom";
+import { FC } from "react";
 
-enum ButtonClasses {
-	'mainCompanies' = 'companies__button',
-	'stores' = 'stores__button',
-	'coupons' = 'coupons__item-button',
+import "./button.scss";
+
+// enum ButtonClasses {
+//   "mainCompanies" = "companies__button",
+//   "stores" = "stores__button",
+//   "coupons" = "coupons__item-button",
+// }
+//
+// enum PathType {
+//   "mainCompanies" = AppRoute.Stores,
+//   "stores" = AppRoute.Coupon,
+//   "coupons" = AppRoute.Coupons,
+// }
+
+// type ButtonProps = {
+// 	typeButton: 'mainCompanies' | 'stores' | 'coupons',
+// }
+
+interface ButtonProps {
+  className: string;
+  path: string;
+  text: string;
 }
 
-enum PathType {
-	'mainCompanies' = AppRoute.Stores,
-	'stores' = AppRoute.Coupon,
-	'coupons' = AppRoute.Coupons,
-}
-
-type ButtonProps = {
-	typeButton: 'mainCompanies' | 'stores' | 'coupons',
-}
-
-function Button({typeButton}: ButtonProps):JSX.Element {
-	const buttonType = ButtonClasses[typeButton];
-	const buttonPath = PathType[typeButton];
-	
-	return (
-		<div className={`button ${buttonType}`}>
-			<Link className='button__link' to={buttonPath} />
-			<span className='button__text'>View All Stores</span>
-		</div>
-	);
-}
+const Button: FC<ButtonProps> = ({ className, path, text }) => {
+  return (
+    <div className={`button ${className}`}>
+      <Link className="button__link" to={path} />
+      <span className="button__text">{text}</span>
+    </div>
+  );
+};
 
 export default Button;
