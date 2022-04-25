@@ -1,14 +1,15 @@
 import { useAppDispatch, useAppSelector } from "../../hooks";
-import { generatePath, Link, useParams } from "react-router-dom";
+import { generatePath, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { getCurrentCompany } from "../../store/slices/companies";
-import "./coupons.scss";
 import { AppRoute } from "../../const";
 import Details from "./details";
 import Button from "../button/button";
+import "./coupons.scss";
 
 function Coupons() {
   const { id } = useParams();
+
   const dispatch = useAppDispatch();
   const company = useAppSelector(({ DATA }) => DATA.selectedCompany);
 
@@ -17,6 +18,13 @@ function Coupons() {
       dispatch(getCurrentCompany(Number(id)));
     }
   }, [dispatch, id]);
+
+  function generatePathLocal(couponName: string, id: number) {
+    return generatePath(AppRoute.Coupon, {
+      couponName: couponName.toLocaleLowerCase().replace(/\s/g, "-"),
+      id: String(id),
+    });
+  }
 
   if (!company) {
     return null;
@@ -54,7 +62,7 @@ function Coupons() {
                     </div>
                     <Button
                       className="coupons__item-button"
-                      path={generatePath(AppRoute.Coupon, { couponName: company.title, id: String(coupon.id) })}
+                      path={generatePathLocal(company.title, coupon.id)}
                       text="GET DEAL"
                     />
                     {/*<div className="button coupons__item-button">*/}
