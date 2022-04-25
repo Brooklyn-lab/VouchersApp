@@ -9,6 +9,7 @@ import ContactsPage from '../../pages/contact-page/contact-page';
 import {useAppSelector} from '../../hooks';
 import LoadingScreen from '../loading-screen/loading-screen';
 import CouponsPage from '../../pages/coupons-page/coupons-page';
+import CouponPage from '../../pages/coupon-page/coupon-page';
 
 function App(): JSX.Element {
   const isLoadingData = useAppSelector(({DATA}) => DATA.isLoadingData);
@@ -27,6 +28,7 @@ function App(): JSX.Element {
         <Route path={AppRoute.About} element={<AboutPage />} />
         <Route path={AppRoute.Contacts} element={<ContactsPage />} />
         <Route path={AppRoute.Coupons} element={<CouponsPage />} />
+        <Route path={AppRoute.Coupon} element={<CouponPage />} />
       </Route>
       <Route path='*' element={<ErrorPage />} />
     </Routes>

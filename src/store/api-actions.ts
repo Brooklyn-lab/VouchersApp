@@ -4,7 +4,6 @@ import { AxiosInstance } from "axios";
 import { Company } from "../types/company";
 import { fetchCompaniesData } from "./slices/companies";
 
-console.log("process.env.REACT_APP_API_BASE_URL", process.env.REACT_APP_API_BASE_URL);
 function companiesFactory(data: Array<Company>) {
   return data.map((company) => {
     return {

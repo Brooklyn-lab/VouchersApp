@@ -1,5 +1,5 @@
 import { store } from "../store";
-import { Company } from "./company";
+import {Company, Coupon} from "./company";
 
 export type CompaniesData = {
   companies: Company[];

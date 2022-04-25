@@ -11,7 +11,7 @@
           "shortText": "Save Up to 40%",
           "header": "Save Up to 40% RRP",
           "description": {
-            "text": "Makeup Special Offers"
+            "text": ["Makeup Special Offers"]
           }
         }
       ]
@@ -27,7 +27,7 @@
           "shortText": "20% Off",
           "header": "Get 20% Off",
           "description": {
-            "text": "20% Off for all kitchens* and bathrooms**"
+            "text": ["20% Off for all kitchens* and bathrooms**"]
           },
           "details": [
             "*When you spent £2,500 on a kitchen",
@@ -47,7 +47,7 @@
           "shortText": "Up to $300*",
           "header": "Save Up to $300*",
           "description": {
-            "text": "*on Select laptops with Student Deals"
+            "text": ["*on Select laptops with Student Deals"]
           }
         }
       ]
@@ -64,7 +64,7 @@
           "header": "Get 15% Discount",
           "description": {
             "title": "Valentine's Day 2022 Collection",
-            "text": "Celebrate the season of love with adorable heart-themed accessories"
+            "text": ["Celebrate the season of love with adorable heart-themed accessories"]
           }
         },
         {
@@ -73,7 +73,7 @@
           "header": "Get 10% Discount",
           "description": {
             "title": "New Arrivals",
-            "text": "Show off your style personality with our latest shoes, bags and accessories"
+            "text": ["Show off your style personality with our latest shoes, bags and accessories"]
           }
         }
       ]
@@ -89,7 +89,7 @@
           "shortText": "5% Off",
           "header": "Get 5% Off",
           "description": {
-            "text": "Get up to 35% Off in Flash Deals"
+            "text": ["Get up to 35% Off in Flash Deals"]
           }
         }
       ]
@@ -105,7 +105,7 @@
           "shortText": "Up to 50% Off",
           "header": "Get up to 50% Off",
           "description": {
-            "text": "Wear now, layer later <br>Up to 50% Off Trans-Seasonal Staples"
+            "text": ["Wear now, layer later <br>Up to 50% Off Trans-Seasonal Staples"]
           }
         }
       ]
@@ -121,7 +121,7 @@
           "shortText": "30% Off",
           "header": "Get 30% Off",
           "description": {
-            "text": "Biggest Flash Sale <br> Mattresses + 2 Luxury Pillows"
+            "text": ["Biggest Flash Sale <br> Mattresses + 2 Luxury Pillows"]
           }
         }
       ]
@@ -137,7 +137,7 @@
           "shortText": "Up to 30% Off",
           "header": "Get Up to 30% Off for Annual Best Sellers",
           "description": {
-            "text": "<ul class='coupon__description'><li>- No Minimum Order</li><li>- Shipping Worldwide</li></ul>"
+            "text": ["- No Minimum Order", "- Shipping Worldwide"]
           }
         }
       ]
@@ -153,7 +153,7 @@
           "shortText": "Up to 70% Off",
           "header": "Get Up to 70% Off",
           "description": {
-            "text": "Shop the Outlet with up to 70% off"
+            "text": ["Shop the Outlet with up to 70% off"]
           }
         }
       ]
@@ -168,9 +168,9 @@
           "id": 1,
           "shortText": "Save 20%*",
           "header":
-          "Save 20%*<br> with code: <span class='coupon__text-strong',>NEW20</span>",
+          "Save 20%* with code: NEW20",
           "description": {
-            "text": "Code available for new customers"
+            "text": ["Code available for new customers"]
           },
           "details": ["*Code valid on products in list only."]
         }
@@ -187,7 +187,7 @@
           "shortText": "20% Off",
           "header": "Get 20% Off",
           "description": {
-            "text": "Get the discount on selected lines"
+            "text": ["Get the discount on selected lines"]
           }
         }
       ]
@@ -201,10 +201,9 @@
         {
           "id": 1,
           "shortText": "20% Off",
-          "header":
-          "20% Off Site Side <br> Using code: <span class='coupon__text-strong'>JOY20</span>",
+          "header": "20% Off Site Side",
           "description": {
-            "text": "20% Off for all categories: <br> <ul class='coupon__description'><li>- Luggage</li><li>- Backpacks & bags</li><li>- Accessories</li></ul>"
+            "text": ["- Luggage", "- Backpacks & bags", "- Accessories"]
           }
         }
       ]
@@ -220,7 +219,7 @@
           "shortText": "50% Off",
           "header": "50% Off on the 2nd item",
           "description": {
-            "text": "<ul class='coupon__description'><li>- Bra</li><li>- Briefs</li><li>- Nightwear & Homewear</li><li>- Accessories</li><li>- Men</li><li>- Maternity</li></ul>"
+            "text": ["- Bra", ",- Briefs", "- Nightwear & Homewear", "- Accessories", "- Men", "- Maternity"]
           }
         }
       ]
@@ -237,7 +236,7 @@
           "header": "Get 17% Discount",
           "description": {
             "title": "Last chance to get 17% Off",
-            "text": "Almost everything"
+            "text": ["Almost everything"]
           }
         }
       ]
@@ -253,7 +252,7 @@
           "shortText": "Up to 70%",
           "header": "Up to 70% Off Selected Lines",
           "description": {
-            "text": "Further reductions CLEARANCE"
+            "text": ["Further reductions CLEARANCE"]
           }
         }
       ]
@@ -269,7 +268,7 @@
           "shortText": "50% Off",
           "header": "Get 50% Discount",
           "description": {
-            "text": "Even more further reductions. The Winter Sale. Many lines 50% Off"
+            "text": ["Even more further reductions. The Winter Sale. Many lines 50% Off"]
           }
         }
       ]

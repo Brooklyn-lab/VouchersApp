@@ -11,9 +11,9 @@ export const makeFakeCompanies = (): Company[] => ([
 				id: 1,
 				shortText: '20% Off',
 				header:
-					'20% Off Site Side <br> Using code: <span class="coupon__text-strong">JOY20</span>',
+					'20% Off Site Side',
 				description: {
-					text: '20% Off for all categories: <br> <ul class="coupon__description"><li>- Luggage</li><li>- Backpacks & bags</li><li>- Accessories</li></ul>',
+					text: ["- Luggage", "- Backpacks & bags", "- Accessories"],
 				},
 			},
 		],
@@ -30,7 +30,7 @@ export const makeFakeCompanies = (): Company[] => ([
 				header: 'Get 17% Discount',
 				description: {
 					title: 'Last chance to get 17% Off',
-					text: 'Almost everything',
+					text: ['Almost everything'],
 				},
 			},
 		],
@@ -46,7 +46,7 @@ export const makeFakeCompanies = (): Company[] => ([
 				shortText: 'Up to 70%',
 				header: 'Up to 70% Off Selected Lines',
 				description: {
-					text: 'Further reductions CLEARANCE',
+					text: ['Further reductions CLEARANCE'],
 				},
 			},
 		],

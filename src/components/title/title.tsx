@@ -1,7 +1,7 @@
 import './title.scss';
 
 type TitleProps = {
-	namePage: 'AllStores' | 'Coupons',
+	namePage: 'All Stores' | 'Coupons',
 }
 
 function Title({namePage}: TitleProps):JSX.Element {
