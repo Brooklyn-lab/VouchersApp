@@ -13,6 +13,14 @@
           "description": {
             "text": ["Makeup Special Offers"]
           }
+        },
+        {
+          "id": 2,
+          "shortText": "Save Up to 35%",
+          "header": "Save Up to 35% RRP",
+          "description": {
+            "text": ["Makeup Special Offers"]
+          }
         }
       ]
     },
@@ -28,6 +36,30 @@
           "header": "Get 20% Off",
           "description": {
             "text": ["20% Off for all kitchens* and bathrooms**"]
+          },
+          "details": [
+            "*When you spent £2,500 on a kitchen",
+            "**When you spent £250 on a bathroom"
+          ]
+        },
+        {
+          "id": 2,
+          "shortText": "25% Off",
+          "header": "Get 25% Off",
+          "description": {
+            "text": ["25% Off for all kitchens* and bathrooms**"]
+          },
+          "details": [
+            "*When you spent £2,500 on a kitchen",
+            "**When you spent £250 on a bathroom"
+          ]
+        },
+        {
+          "id": 3,
+          "shortText": "30% Off",
+          "header": "Get 30% Off",
+          "description": {
+            "text": ["30% Off for all kitchens* and bathrooms**"]
           },
           "details": [
             "*When you spent £2,500 on a kitchen",
@@ -106,6 +138,14 @@
           "header": "Get up to 50% Off",
           "description": {
             "text": ["Wear now, layer later <br>Up to 50% Off Trans-Seasonal Staples"]
+          }
+        },
+        {
+          "id": 2,
+          "shortText": "Up to 35% Off",
+          "header": "Get up to 35% Off",
+          "description": {
+            "text": ["Wear now, layer later <br>Up to 35% Off Trans-Seasonal Staples"]
           }
         }
       ]

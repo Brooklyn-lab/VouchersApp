@@ -1,25 +1,23 @@
-import {Route, Routes} from 'react-router-dom';
-import ErrorPage from '../../pages/error-page/error-page';
-import {AppRoute} from '../../const';
-import HomePage from '../../pages/home-page/home-page';
-import Layout from '../Layout/layout';
-import StoresPage from '../../pages/stores-page/stores-page';
-import AboutPage from '../../pages/about-page/about-page';
-import ContactsPage from '../../pages/contact-page/contact-page';
-import {useAppSelector} from '../../hooks';
-import LoadingScreen from '../loading-screen/loading-screen';
-import CouponsPage from '../../pages/coupons-page/coupons-page';
-import CouponPage from '../../pages/coupon-page/coupon-page';
+import { Route, Routes } from 'react-router-dom'
+import ErrorPage from '../../pages/error-page/error-page'
+import { AppRoute } from '../../const'
+import HomePage from '../../pages/home-page/home-page'
+import Layout from '../layout/layout'
+import StoresPage from '../../pages/stores-page/stores-page'
+import AboutPage from '../../pages/about-page/about-page'
+import ContactsPage from '../../pages/contact-page/contact-page'
+import { useAppSelector } from '../../hooks'
+import LoadingScreen from '../loading-screen/loading-screen'
+import CouponsPage from '../../pages/coupons-page/coupons-page'
+import CouponPage from '../../pages/coupon-page/coupon-page'
 
 function App(): JSX.Element {
-  const isLoadingData = useAppSelector(({DATA}) => DATA.isLoadingData);
-  
-  if(!isLoadingData) {
-    return (
-      <LoadingScreen />
-    );
+  const isLoadingData = useAppSelector(({ DATA }) => DATA.isLoadingData)
+
+  if (!isLoadingData) {
+    return <LoadingScreen />
   }
-  
+
   return (
     <Routes>
       <Route path={AppRoute.Main} element={<Layout />}>
@@ -30,9 +28,9 @@ function App(): JSX.Element {
         <Route path={AppRoute.Coupons} element={<CouponsPage />} />
         <Route path={AppRoute.Coupon} element={<CouponPage />} />
       </Route>
-      <Route path='*' element={<ErrorPage />} />
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
-  );
+  )
 }
 
-export default App;
+export default App

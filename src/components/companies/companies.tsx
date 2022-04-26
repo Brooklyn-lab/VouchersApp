@@ -48,10 +48,6 @@ function Companies(): JSX.Element {
       </div>
 
       <Button className="companies__button" path={AppRoute.Stores} text="View All Stores" />
-      {/*<div className="button companies__button">*/}
-      {/*  <Link className="button__link" to={AppRoute.Stores} />*/}
-      {/*  <span className="button__text">View All Stores</span>*/}
-      {/*</div>*/}
     </section>
   );
 }

@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+  padding: 15px;
+  max-width: 261px;
+  width: 100%;
+  position: relative;
+  background: #FFC200;
+  border-radius: 5px;
+  border: 1px solid #FFC200;
+
+  &__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &:hover {
+    transition: all 0.3s ease 0s;
+    background: transparent;
+
+    .button__text {
+      color: #222222;
+    }
+  }
+}

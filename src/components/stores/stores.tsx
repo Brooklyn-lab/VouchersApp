@@ -1,5 +1,8 @@
 import { useAppSelector } from "../../hooks";
 import "./stores.scss";
+import {AppRoute} from '../../const';
+import Button from '../button/button';
+import {generatePath} from 'react-router-dom';
 
 function Stores(): JSX.Element {
   const { companies } = useAppSelector(({ DATA }) => DATA);
@@ -12,6 +15,11 @@ function Stores(): JSX.Element {
             <div className="stores__img-wrapper">
               <img src={company.logo} alt={company.title} />
             </div>
+	          <Button
+		          className="stores__button"
+		          path={generatePath(AppRoute.Coupons, {id: String(company.id)})}
+		          text="View Details"
+	          />
           </div>
         ))}
       </div>

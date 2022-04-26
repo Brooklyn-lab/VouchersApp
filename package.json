@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.0.0",
     "axios": "^0.21.1",
     "json-server": "^0.17.0",
+    "prettier": "^2.6.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-redux": "^7.2.8",
@@ -36,6 +37,8 @@
     ]
   },
   "prettier": {
+    "semi": false,
+    "singleQuote": true,
     "printWidth": 120
   },
   "browserslist": {

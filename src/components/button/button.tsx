@@ -1,23 +1,6 @@
 import { Link } from "react-router-dom";
 import { FC } from "react";
-
 import "./button.scss";
-
-// enum ButtonClasses {
-//   "mainCompanies" = "companies__button",
-//   "stores" = "stores__button",
-//   "coupons" = "coupons__item-button",
-// }
-//
-// enum PathType {
-//   "mainCompanies" = AppRoute.Stores,
-//   "stores" = AppRoute.Coupon,
-//   "coupons" = AppRoute.Coupons,
-// }
-
-// type ButtonProps = {
-// 	typeButton: 'mainCompanies' | 'stores' | 'coupons',
-// }
 
 interface ButtonProps {
   className: string;

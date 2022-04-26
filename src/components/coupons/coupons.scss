@@ -1,4 +1,14 @@
 .company {
+  padding: 0 0 100px 0;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0 70px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 0 50px 0;
+  }
+
   &__body {
     display: grid;
     grid-template-columns: 300px auto;
@@ -107,6 +117,8 @@
 }
 
 .details {
+  margin-top: 20px;
+
   &__button {
     cursor: pointer;
     display: inline-block;

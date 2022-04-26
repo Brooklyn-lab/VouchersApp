@@ -54,8 +54,7 @@ function Coupons() {
                         <p className="coupons__item-about-title">{coupon.description.title}</p>
                       ) : null}
                       {coupon.description.text.map((text) => (
-                        // fixme не используй id
-                        <div id={text}>
+                        <div key={text}>
                           <p className="coupons__item-about-text">{text}</p>
                         </div>
                       ))}
@@ -65,13 +64,6 @@ function Coupons() {
                       path={generatePathLocal(company.title, coupon.id)}
                       text="GET DEAL"
                     />
-                    {/*<div className="button coupons__item-button">*/}
-                    {/*  <Link*/}
-                    {/*    className="button__link"*/}
-                    {/*    to={generatePath(AppRoute.Coupon, { couponName: company.title, id: String(coupon.id) })}*/}
-                    {/*  />*/}
-                    {/*  <span className="button__text">GET DEAL</span>*/}
-                    {/*</div>*/}
                   </div>
                 </div>
                 {coupon.details ? <Details details={coupon.details} /> : ""}
