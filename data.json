@@ -312,6 +312,319 @@
           }
         }
       ]
+    },
+    {
+      "id": 17,
+      "title": "All Beauty",
+      "logo": "/allbeauty.png",
+      "link": "https://www.allbeauty.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Save Up to 40%",
+          "header": "Save Up to 40% RRP",
+          "description": {
+            "text": ["Makeup Special Offers"]
+          }
+        },
+        {
+          "id": 2,
+          "shortText": "Save Up to 35%",
+          "header": "Save Up to 35% RRP",
+          "description": {
+            "text": ["Makeup Special Offers"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "B & Q",
+      "logo": "/B&Q.png",
+      "link": "https://www.diy.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "20% Off",
+          "header": "Get 20% Off",
+          "description": {
+            "text": ["20% Off for all kitchens* and bathrooms**"]
+          },
+          "details": [
+            "*When you spent £2,500 on a kitchen",
+            "**When you spent £250 on a bathroom"
+          ]
+        },
+        {
+          "id": 2,
+          "shortText": "25% Off",
+          "header": "Get 25% Off",
+          "description": {
+            "text": ["25% Off for all kitchens* and bathrooms**"]
+          },
+          "details": [
+            "*When you spent £2,500 on a kitchen",
+            "**When you spent £250 on a bathroom"
+          ]
+        },
+        {
+          "id": 3,
+          "shortText": "30% Off",
+          "header": "Get 30% Off",
+          "description": {
+            "text": ["30% Off for all kitchens* and bathrooms**"]
+          },
+          "details": [
+            "*When you spent £2,500 on a kitchen",
+            "**When you spent £250 on a bathroom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Best Buy",
+      "logo": "/bestbuy.png",
+      "link": "https://www.bestbuy.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to $300*",
+          "header": "Save Up to $300*",
+          "description": {
+            "text": ["*on Select laptops with Student Deals"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Charles & Keith",
+      "logo": "/CharlesAndKeith.png",
+      "link": "https://www.charleskeith.eu/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "15% Off",
+          "header": "Get 15% Discount",
+          "description": {
+            "title": "Valentine's Day 2022 Collection",
+            "text": ["Celebrate the season of love with adorable heart-themed accessories"]
+          }
+        },
+        {
+          "id": 2,
+          "shortText": "10% Off",
+          "header": "Get 10% Discount",
+          "description": {
+            "title": "New Arrivals",
+            "text": ["Show off your style personality with our latest shoes, bags and accessories"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Deal Extreme (DX)",
+      "logo": "/dealextreme.png",
+      "link": "https://www.dx.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "5% Off",
+          "header": "Get 5% Off",
+          "description": {
+            "text": ["Get up to 35% Off in Flash Deals"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Dorothy Perkins",
+      "logo": "/dorothyperkins.png",
+      "link": "https://www.dorothyperkins.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 50% Off",
+          "header": "Get up to 50% Off",
+          "description": {
+            "text": ["Wear now, layer later <br>Up to 50% Off Trans-Seasonal Staples"]
+          }
+        },
+        {
+          "id": 2,
+          "shortText": "Up to 35% Off",
+          "header": "Get up to 35% Off",
+          "description": {
+            "text": ["Wear now, layer later <br>Up to 35% Off Trans-Seasonal Staples"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "title": "GhostBed",
+      "logo": "/ghostbed.png",
+      "link": "https://www.ghostbed.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "30% Off",
+          "header": "Get 30% Off",
+          "description": {
+            "text": ["Biggest Flash Sale <br> Mattresses + 2 Luxury Pillows"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Know Fashion Style",
+      "logo": "/knowfashionstyle.png",
+      "link": "https://www.knowfashionstyle.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 30% Off",
+          "header": "Get Up to 30% Off for Annual Best Sellers",
+          "description": {
+            "text": ["- No Minimum Order", "- Shipping Worldwide"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Long Tall Sally",
+      "logo": "/longtallsally.png",
+      "link": "https://www.longtallsally.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 70% Off",
+          "header": "Get Up to 70% Off",
+          "description": {
+            "text": ["Shop the Outlet with up to 70% off"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Look Fantastic",
+      "logo": "/lookfantastic.png",
+      "link": "https://www.lookfantastic.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Save 20%*",
+          "header":
+          "Save 20%* with code: NEW20",
+          "description": {
+            "text": ["Code available for new customers"]
+          },
+          "details": ["*Code valid on products in list only."]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Marks & Spencer",
+      "logo": "/MS.png",
+      "link": "https://www.marksandspencer.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "20% Off",
+          "header": "Get 20% Off",
+          "description": {
+            "text": ["Get the discount on selected lines"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": "Samsonite",
+      "logo": "/samsonite.png",
+      "link": "https://shop.samsonite.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "20% Off",
+          "header": "20% Off Site Side",
+          "description": {
+            "text": ["- Luggage", "- Backpacks & bags", "- Accessories"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Women Secret",
+      "logo": "/womensecret.png",
+      "link": "https://womensecret.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "50% Off",
+          "header": "50% Off on the 2nd item",
+          "description": {
+            "text": ["- Bra", ",- Briefs", "- Nightwear & Homewear", "- Accessories", "- Men", "- Maternity"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "title": "Forever21",
+      "logo": "/forever21.png",
+      "link": "https://www.forever21.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "17% Off",
+          "header": "Get 17% Discount",
+          "description": {
+            "title": "Last chance to get 17% Off",
+            "text": ["Almost everything"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Bad Rhino",
+      "logo": "/badrhino.png",
+      "link": "https://www.badrhino.com/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "Up to 70%",
+          "header": "Up to 70% Off Selected Lines",
+          "description": {
+            "text": ["Further reductions CLEARANCE"]
+          }
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Rohan",
+      "logo": "/rohan.png",
+      "link": "https://www.rohan.co.uk/",
+      "coupons": [
+        {
+          "id": 1,
+          "shortText": "50% Off",
+          "header": "Get 50% Discount",
+          "description": {
+            "text": ["Even more further reductions. The Winter Sale. Many lines 50% Off"]
+          }
+        }
+      ]
     }
   ]
 }

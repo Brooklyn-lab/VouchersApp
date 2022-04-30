@@ -69,6 +69,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrapper {
+  flex: 1 0 auto;
+}
 .container {
   max-width: 1230px;
   width: 100%;
@@ -92,5 +101,32 @@ img {
 
   @media screen and (max-width: 576px) {
     font-size: 30px;
+  }
+}
+.content-text-strong {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+}
+.content-text {
+  font-size: 16px;
+  line-height: 120%;
+}
+.content-list-item {
+  font-size: 16px;
+  line-height: 120%;
+  position: relative;
+  padding-left: 25px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #222222;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
   }
 }

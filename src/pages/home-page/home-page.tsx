@@ -1,12 +1,16 @@
 import Companies from '../../components/companies/companies'
 import RandomCoupons from '../../components/random-coupons/random-coupons'
+import PreviewSlider from '../../components/preview-slider/preview-slider'
 
 function HomePage(): JSX.Element {
   return (
-    <div className="container">
-      <RandomCoupons />
-      <Companies />
-    </div>
+    <>
+      <PreviewSlider />
+      <div className="container">
+        <RandomCoupons />
+        <Companies />
+      </div>
+    </>
   )
 }
 
