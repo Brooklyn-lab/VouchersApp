@@ -1,4 +1,4 @@
-import { Company } from '../types/company'
+import { Company } from '../store/companies/types'
 
 export function randoms(arr: Company[], length: number) {
   return first(shuffle(arr), length)

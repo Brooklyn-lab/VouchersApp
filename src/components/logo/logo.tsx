@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { AppRoute } from '../../const'
+import { ROUTES } from '../../constants'
 import './logo.scss'
 
 type LogoProps = {
@@ -8,7 +8,7 @@ type LogoProps = {
 
 function Logo({ className }: LogoProps): JSX.Element {
   return (
-    <Link to={AppRoute.Main}>
+    <Link to={ROUTES.Main}>
       <svg xmlns="http://www.w3.org/2000/svg" width="195" height="50" viewBox="0 0 195 50" fill="none" className="logo">
         <g clipPath="url(#clip0_708_108)">
           <path

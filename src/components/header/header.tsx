@@ -1,6 +1,6 @@
 import './header.scss'
 import { Link } from 'react-router-dom'
-import { AppRoute } from '../../const'
+import { ROUTES } from '../../constants'
 import Logo from '../logo/logo'
 
 function Header(): JSX.Element {
@@ -13,22 +13,22 @@ function Header(): JSX.Element {
             <nav>
               <ul className="header__nav-list">
                 <li className="header__nav-item">
-                  <Link className="header__nav-item-link" to={AppRoute.Main}>
+                  <Link className="header__nav-item-link" to={ROUTES.Main}>
                     Home
                   </Link>
                 </li>
                 <li className="header__nav-item">
-                  <Link className="header__nav-item-link" to={AppRoute.Stores}>
+                  <Link className="header__nav-item-link" to={ROUTES.Stores}>
                     Stores
                   </Link>
                 </li>
                 <li className="header__nav-item">
-                  <Link className="header__nav-item-link" to={AppRoute.About}>
+                  <Link className="header__nav-item-link" to={ROUTES.About}>
                     About Us
                   </Link>
                 </li>
                 <li className="header__nav-item">
-                  <Link className="header__nav-item-link" to={AppRoute.Contacts}>
+                  <Link className="header__nav-item-link" to={ROUTES.Contacts}>
                     Contacts Us
                   </Link>
                 </li>

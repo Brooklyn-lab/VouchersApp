@@ -1,17 +1,18 @@
-import React from 'react';
-import App from './components/app/app';
-import {Provider} from 'react-redux';
-import './general.scss';
-import HistoryRouter from './components/history-router/history-router';
-import browserHistory from './browser-history';
-import {createRoot} from 'react-dom/client';
-import {store} from './store';
-import {fetchCompaniesDataAction} from './store/api-actions';
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import { Provider } from 'react-redux'
 
-store.dispatch(fetchCompaniesDataAction());
+import HistoryRouter from './components/history-router/history-router'
+import browserHistory from './browser-history'
+import { store } from './store/store'
+import App from './app'
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement!);
+import './general.scss'
+
+// store.dispatch(fetchCompaniesDataAction())
+
+const rootElement = document.getElementById('root')
+const root = createRoot(rootElement!)
 
 root.render(
   <React.StrictMode>
@@ -21,4 +22,4 @@ root.render(
       </Provider>
     </HistoryRouter>
   </React.StrictMode>
-);
+)

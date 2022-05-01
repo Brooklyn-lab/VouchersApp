@@ -1,15 +1,16 @@
 import './random-coupons.scss'
-import { useAppSelector } from '../../hooks'
 import { randoms } from '../../utils/utils'
 import Button from '../button/button'
-import { AppRoute } from '../../const'
 import { generatePath } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { Company } from '../../types/company'
-import useMediaQuery from '../../hooks/useMediaQuery'
+import useMediaQuery from '../../utils/hooks/useMediaQuery'
+import { selectCompanies } from '../../store/companies/companiesSlice'
+import { useAppSelector } from '../../store/store'
+import { Company } from '../../store/companies/types'
+import { ROUTES } from '../../constants'
 
 function RandomCoupons(): JSX.Element {
-  const { companies } = useAppSelector(({ DATA }) => DATA)
+  const { companies } = useAppSelector(selectCompanies)
   const [companiesWidthCoupons, setCompaniesWidthCoupons] = useState<Company[]>([])
   const [length, setLength] = useState<number>(7)
   const tabletMedia = useMediaQuery('(max-width: 992px)')
@@ -61,7 +62,7 @@ function RandomCoupons(): JSX.Element {
                   <Button
                     key={coupon.id}
                     className="random-coupons__button"
-                    path={generatePath(AppRoute.Coupon, { couponName: 'a', id: String(coupon.id) })}
+                    path={generatePath(ROUTES.Coupon, { couponName: 'a', id: String(coupon.id) })}
                     text="View Details"
                   />
                 )

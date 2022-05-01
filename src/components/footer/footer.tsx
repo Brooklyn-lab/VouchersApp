@@ -1,6 +1,6 @@
 import Logo from '../logo/logo'
 import { Link } from 'react-router-dom'
-import { AppRoute } from '../../const'
+import { ROUTES } from '../../constants'
 import './footer.scss'
 
 function Footer(): JSX.Element {
@@ -16,17 +16,17 @@ function Footer(): JSX.Element {
               <p className="footer__title">Quick links</p>
               <ul className="footer__nav">
                 <li className="footer__nav-item">
-                  <Link className="footer__nav-link" to={AppRoute.Main}>
+                  <Link className="footer__nav-link" to={ROUTES.Main}>
                     Privacy Policy
                   </Link>
                 </li>
                 <li className="footer__nav-item">
-                  <Link className="footer__nav-link" to={AppRoute.Main}>
+                  <Link className="footer__nav-link" to={ROUTES.Main}>
                     Terms & Conditions
                   </Link>
                 </li>
                 <li className="footer__nav-item">
-                  <Link className="footer__nav-link" to={AppRoute.Main}>
+                  <Link className="footer__nav-link" to={ROUTES.Main}>
                     About us
                   </Link>
                 </li>
