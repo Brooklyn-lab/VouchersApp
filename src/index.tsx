@@ -15,11 +15,9 @@ const rootElement = document.getElementById('root')
 const root = createRoot(rootElement!)
 
 root.render(
-  <React.StrictMode>
-    <HistoryRouter history={browserHistory}>
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </HistoryRouter>
-  </React.StrictMode>
+  <HistoryRouter history={browserHistory}>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </HistoryRouter>
 )
