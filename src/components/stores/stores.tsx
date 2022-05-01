@@ -6,29 +6,31 @@ import { fetchCompanies, selectCompanies } from "../../store/companies/companies
 import { useAppDispatch, useAppSelector } from "../../store/store";
 import "./stores.scss";
 
-function useInfiniteScroll(callbackParam: any) {
-  const observer = useRef<any>(null);
+function useInfiniteScroll(callbackParam: any, listLength: number, count: number) {
+  const observer = useRef<null | IntersectionObserver>(null);
 
-  const callback = useCallback(
-    (entries: any) => {
-      if (entries.length === 0) return false;
+  const hasMore = listLength < count;
 
-      if (entries[0].isIntersecting) {
-        callbackParam();
-      }
-    },
-    [callbackParam]
-  );
+  if (!hasMore) {
+    observer.current?.disconnect();
+  }
 
-  const infiniteScrollRef = useCallback(
-    (node: any) => {
-      if (!node) return false;
+  const infiniteScrollRef = useCallback((node: null | HTMLDivElement) => {
+    if (!node) return false;
 
-      observer.current = new IntersectionObserver(callback, { threshold: 1 });
-      observer.current.observe(node);
-    },
-    [callback]
-  );
+    observer.current = new IntersectionObserver(
+      (entries) => {
+        if (entries.length === 0) return false;
+
+        if (entries[0].isIntersecting) {
+          callbackParam();
+        }
+      },
+      { threshold: 1 }
+    );
+    observer.current.observe(node);
+  }, []);
+
   useEffect(() => {
     return () => observer.current?.disconnect();
   }, []);
@@ -39,17 +41,11 @@ function useInfiniteScroll(callbackParam: any) {
 const Stores: FC = () => {
   const dispatch = useAppDispatch();
   const companies = useAppSelector(selectCompanies);
-  const loadMoreCompanies = useCallback(() => {
-    if (companies.list.length < companies.count) {
-      dispatch(fetchCompanies());
-    }
-  }, []);
+  const infiniteScrollRef = useInfiniteScroll(loadMoreCompanies, companies.list.length, companies.count);
 
-  const infiniteScrollRef = useInfiniteScroll(loadMoreCompanies);
-
-  useEffect(() => {
+  function loadMoreCompanies() {
     dispatch(fetchCompanies());
-  }, []);
+  }
 
   if (companies.loading === "pending" && !companies.isFirstObtainHappened) {
     return <div>Loading...</div>;
@@ -70,8 +66,8 @@ const Stores: FC = () => {
             />
           </div>
         ))}
-        <div ref={infiniteScrollRef}></div>
       </div>
+      <div ref={infiniteScrollRef}></div>
     </section>
   );
 };
