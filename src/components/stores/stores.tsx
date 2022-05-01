@@ -1,42 +1,13 @@
-import React, { FC, useCallback, useEffect, useRef } from "react";
+import React, { FC } from "react";
 import { generatePath } from "react-router-dom";
+
 import Button from "../button/button";
 import { ROUTES } from "../../constants";
 import { fetchCompanies, selectCompanies } from "../../store/companies/companiesSlice";
 import { useAppDispatch, useAppSelector } from "../../store/store";
+import { useInfiniteScroll } from "../../utils/hooks/useInfiniteScroll";
+
 import "./stores.scss";
-
-function useInfiniteScroll(callbackParam: any, listLength: number, count: number) {
-  const observer = useRef<null | IntersectionObserver>(null);
-
-  const hasMore = listLength < count;
-
-  if (!hasMore) {
-    observer.current?.disconnect();
-  }
-
-  const infiniteScrollRef = useCallback((node: null | HTMLDivElement) => {
-    if (!node) return false;
-
-    observer.current = new IntersectionObserver(
-      (entries) => {
-        if (entries.length === 0) return false;
-
-        if (entries[0].isIntersecting) {
-          callbackParam();
-        }
-      },
-      { threshold: 1 }
-    );
-    observer.current.observe(node);
-  }, []);
-
-  useEffect(() => {
-    return () => observer.current?.disconnect();
-  }, []);
-
-  return infiniteScrollRef;
-}
 
 const Stores: FC = () => {
   const dispatch = useAppDispatch();
