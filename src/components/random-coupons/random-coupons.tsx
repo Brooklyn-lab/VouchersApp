@@ -1,47 +1,47 @@
-import './random-coupons.scss'
-import { randoms } from '../../utils/utils'
-import Button from '../button/button'
-import { generatePath } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import useMediaQuery from '../../utils/hooks/useMediaQuery'
-import { selectCompanies } from '../../store/companies/companiesSlice'
-import { useAppSelector } from '../../store/store'
-import { Company } from '../../store/companies/types'
-import { ROUTES } from '../../constants'
+import "./random-coupons.scss";
+import { randoms } from "../../utils/utils";
+import Button from "../button/button";
+import { generatePath } from "react-router-dom";
+import { useEffect, useState } from "react";
+import useMediaQuery from "../../utils/hooks/useMediaQuery";
+import { selectCompanies } from "../../store/companies/companiesSlice";
+import { useAppSelector } from "../../store/store";
+import { Company } from "../../store/companies/types";
+import { ROUTES } from "../../constants";
 
 function RandomCoupons(): JSX.Element {
-  const { companies } = useAppSelector(selectCompanies)
-  const [companiesWidthCoupons, setCompaniesWidthCoupons] = useState<Company[]>([])
-  const [length, setLength] = useState<number>(7)
-  const tabletMedia = useMediaQuery('(max-width: 992px)')
-  const mobileMedia = useMediaQuery('(max-width: 768px)')
+  const { list } = useAppSelector(selectCompanies);
+  const [companiesWidthCoupons, setCompaniesWidthCoupons] = useState<Company[]>([]);
+  const [length, setLength] = useState<number>(7);
+  const tabletMedia = useMediaQuery("(max-width: 992px)");
+  const mobileMedia = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     if (tabletMedia) {
-      setLength(6)
-      console.log(length)
+      setLength(6);
+      console.log(length);
     }
 
     if (mobileMedia) {
-      setLength(2)
-      console.log(length)
+      setLength(2);
+      console.log(length);
     }
-  }, [length, tabletMedia, mobileMedia])
+  }, [length, tabletMedia, mobileMedia]);
 
   useEffect(() => {
-    companies.map((company) => {
+    list.map((company) => {
       if (company.coupons) {
         setCompaniesWidthCoupons((prevState) => {
           if (prevState) {
-            return [...prevState, company]
+            return [...prevState, company];
           }
-          return prevState
-        })
+          return prevState;
+        });
       }
 
-      return companiesWidthCoupons
-    })
-  }, [companies])
+      return companiesWidthCoupons;
+    });
+  }, [list]);
 
   return (
     <section className="random-coupons">
@@ -56,16 +56,16 @@ function RandomCoupons(): JSX.Element {
               <p className="random-coupons__free">Get Free Shipping & Free Delivery</p>
               {company.coupons?.map((coupon, index) => {
                 if (index >= 1) {
-                  return null
+                  return null;
                 }
                 return (
                   <Button
                     key={coupon.id}
                     className="random-coupons__button"
-                    path={generatePath(ROUTES.Coupon, { couponName: 'a', id: String(coupon.id) })}
+                    path={generatePath(ROUTES.Coupon, { couponName: "a", id: String(coupon.id) })}
                     text="View Details"
                   />
-                )
+                );
               })}
               <p className="random-coupons__date">Expires On : 2023-10-31</p>
             </div>
@@ -73,7 +73,7 @@ function RandomCoupons(): JSX.Element {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default RandomCoupons
+export default RandomCoupons;

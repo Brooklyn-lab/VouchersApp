@@ -9,8 +9,6 @@ import App from './app'
 
 import './general.scss'
 
-// store.dispatch(fetchCompaniesDataAction())
-
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement!)
 

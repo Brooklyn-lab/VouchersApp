@@ -1,20 +1,20 @@
-import './companies.scss'
-import { Link } from 'react-router-dom'
-import { ROUTES } from '../../constants'
-import { generatePath } from 'react-router-dom'
-import Button from '../button/button'
-import { selectCompanies } from '../../store/companies/companiesSlice'
-import { useAppSelector } from '../../store/store'
-import { Company } from '../../store/companies/types'
+import "./companies.scss";
+import { Link } from "react-router-dom";
+import { ROUTES } from "../../constants";
+import { generatePath } from "react-router-dom";
+import Button from "../button/button";
+import { selectCompanies } from "../../store/companies/companiesSlice";
+import { useAppSelector } from "../../store/store";
+import { Company } from "../../store/companies/types";
 
 function Companies(): JSX.Element {
-  const { companies } = useAppSelector(selectCompanies)
+  const { list } = useAppSelector(selectCompanies);
   // function randoms(arr: Company[], length: number) {
   // 	return first(shuffle(arr), length);
   // }
   //
   function first(arr: Company[], length: number) {
-    return arr.slice(0, length)
+    return arr.slice(0, length);
   }
   //
   // function shuffle(arr: Company[]) {
@@ -33,7 +33,7 @@ function Companies(): JSX.Element {
   // function getRandomInt(min: number, max: number) {
   // 	return Math.floor(Math.random() * (max - min + 1)) + min;
   // }
-  const filterCompanies = first(companies, 10)
+  const filterCompanies = first(list, 10);
 
   return (
     <section className="companies">
@@ -49,7 +49,7 @@ function Companies(): JSX.Element {
 
       <Button className="companies__button" path={ROUTES.Stores} text="View All Stores" />
     </section>
-  )
+  );
 }
 
-export default Companies
+export default Companies;
