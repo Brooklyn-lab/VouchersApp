@@ -1,24 +1,25 @@
-import { useAppSelector } from '../../hooks'
-import './stores.scss'
-import { AppRoute } from '../../const'
-import Button from '../button/button'
-import { generatePath } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { Company } from '../../types/company'
+import { generatePath } from 'react-router-dom'
+import { useAppSelector } from '../../store/store'
+import { selectCompanies } from '../../store/companies/companiesSlice'
+import { ROUTES } from '../../constants'
+import { Company } from '../../store/companies/types'
+import Button from '../button/button'
+import './stores.scss'
 
 function Stores(): JSX.Element {
-  const companies = useAppSelector(({ DATA }) => DATA.companies)
+  const { companies } = useAppSelector(selectCompanies)
   const [page, setPage] = useState<number>(1)
   const [limit, setLimit] = useState<number>(8)
   const [fetching, setFetching] = useState<boolean>(false)
   const [currentCompany, setCurrentCompany] = useState<Company[]>([])
   const [isLoading, setIsLoading] = useState<boolean>(false)
 
-  useEffect(() => {
-    setCurrentCompany(companies.slice(0, limit))
-    console.log(currentCompany.length)
-    console.log(companies.length)
-  }, [limit])
+  // useEffect(() => {
+  //   setCurrentCompany(companies.slice(0, limit))
+  //   console.log(currentCompany.length)
+  //   console.log(companies.length)
+  // }, [limit])
 
   useEffect(() => {
     if (fetching) {
@@ -39,12 +40,12 @@ function Stores(): JSX.Element {
   }, [])
 
   const scrollHandler = (evt: any) => {
-    if (currentCompany.length !== companies.length) {
-      if (evt.target.documentElement.scrollHeight - (evt.target.documentElement.scrollTop + window.innerHeight) < 400) {
-        setFetching(true)
-        setIsLoading(true)
-      }
-    }
+    // if (currentCompany.length !== companies.length) {
+    //   if (evt.target.documentElement.scrollHeight - (evt.target.documentElement.scrollTop + window.innerHeight) < 400) {
+    //     setFetching(true)
+    //     setIsLoading(true)
+    //   }
+    // }
   }
 
   return (
@@ -57,7 +58,7 @@ function Stores(): JSX.Element {
             </div>
             <Button
               className="stores__button"
-              path={generatePath(AppRoute.Coupons, { id: String(company.id) })}
+              path={generatePath(ROUTES.Coupons, { id: String(company.id) })}
               text="View Details"
             />
           </div>
